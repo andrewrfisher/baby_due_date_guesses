@@ -32,7 +32,7 @@ def index():
             writer.writerow([name, email, date, time])
 
         # Optional: Send email to yourself
-        msg = Message('New Baby Guess Submission',
+        msg = Message('New Baby Due Date Prediction Submission',
                       sender='babyguesser@gmail.com',
                       recipients=['andrewnorly@gmail.com'])
         msg.body = f'Name: {name}\nEmail: {email}\nDate: {date}\nTime: {time}'
